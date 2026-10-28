@@ -1,24 +1,33 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { Header } from "@/components/Header";
+import { CursorWidget } from "@/components/CursorWidget";
+import { SyncTable } from "@/components/SyncTable";
+import { RunDrawer } from "@/components/RunDrawer";
+import { mockRuns, type SyncRun } from "@/lib/mockData";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Sync Runs — Shopify to HubSpot Sync Command Center" },
+      { name: "description", content: "Monitor Shopify to HubSpot customer sync runs, cursor state and errors." },
+      { property: "og:title", content: "Sync Runs — Sync Command Center" },
+      { property: "og:description", content: "Monitor Shopify to HubSpot customer sync runs, cursor state and errors." },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  const [selected, setSelected] = useState<SyncRun | null>(null);
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Header title="Shopify to HubSpot Sync" />
+      <div className="space-y-6 p-8">
+        <CursorWidget />
+        <SyncTable runs={mockRuns} onSelect={setSelected} />
+      </div>
+      <RunDrawer run={selected} onClose={() => setSelected(null)} />
+    </>
   );
 }
