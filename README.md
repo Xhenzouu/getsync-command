@@ -1,3 +1,15 @@
+<div align="center">
+
+<img src="./assets/banner.svg" alt="Sync Command: Read cursor, Shopify, HubSpot upsert, Log run" width="100%"/>
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Lucide](https://img.shields.io/badge/Lucide_React-F56565?style=for-the-badge&logo=lucide&logoColor=white)
+
+</div>
+
 # Sync Command - Shopify to HubSpot Customer Sync
 
 A premium B2B observability dashboard that acts as the UI layer for an n8n data pipeline. This app visualizes the logic of **Workflow 3 (Shopify to HubSpot Customer Sync)** by simulating cursor-based pagination, batch upserts, and sync run auditing.
@@ -32,6 +44,16 @@ This dashboard visualizes that exact flow: the top widget shows the active curso
 - **Premium UI:** Strict flat design, clean typography, and no gradients.
 
 ## Tech Stack
+
+<div align="center">
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Lucide](https://img.shields.io/badge/Lucide_React-F56565?style=for-the-badge&logo=lucide&logoColor=white)
+
+</div>
 
 - **Frontend:** React, TypeScript, Tailwind CSS
 - **Animations:** Framer Motion
