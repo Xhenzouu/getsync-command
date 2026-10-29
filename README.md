@@ -43,22 +43,6 @@ This dashboard visualizes that exact flow: the top widget shows the active curso
 - **API JSON Preview:** Shows the precise payload sent to HubSpot, demonstrating the string-conversion requirement for number properties.
 - **Premium UI:** Strict flat design, clean typography, and no gradients.
 
-## Tech Stack
-
-<div align="center">
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
-![Lucide](https://img.shields.io/badge/Lucide_React-F56565?style=for-the-badge&logo=lucide&logoColor=white)
-
-</div>
-
-- **Frontend:** React, TypeScript, Tailwind CSS
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
-
 ## Run Locally
 
 1. Clone the repo:
